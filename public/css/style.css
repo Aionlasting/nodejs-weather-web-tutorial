@@ -1,0 +1,148 @@
+/*
+Bg : #FFF1DD
+Header:  #ff891a;
+Paragraph: #ffa34d
+
+*/
+
+html {
+  /* font-size: 10px; this allows 1rem == 10 px,
+  /* By default 1 rem == 16px */
+  /* Using REM now allows scaling of site by just using font size when you use REM as the units */
+
+  font-size: 75%; /* Meaning this is 12px in size*/
+  /* 12 / 16 = 0.75 = 75% */
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #eff5f9;
+  color: #0984e3; 
+
+}
+
+h1 {
+  color: ##0984e3;
+  font-size: 2rem;
+}
+
+img {
+  width: 33%;
+  height: 33%;;
+}
+
+p {
+
+  font-size: 1.25rem;
+  line-height: 1.4rem;  
+}
+
+
+li {
+  list-style: none;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #ffebd0ed;
+  padding: 0rem 1rem;
+}
+
+
+.navbar-title h1{ 
+  /* color: #807c8a; */
+  color: #FFC476;
+}
+
+.navbar-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-ul a {
+  text-decoration: none;
+  color: #FFC476;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;  
+  min-height: 90vh;
+
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  flex-grow: 1;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #52bdf2;
+}
+
+footer {
+  color: #b7b4bc
+}
+
+button{
+  background-color: #0984e3;
+  color:#eff5f9;
+  padding: 0.3rem 1.2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: none;
+  margin: 0 1rem;
+  cursor:pointer;
+}
+
+button:hover {
+  background-color: #eff5f9;
+  color:#0984e3;
+  border: solid 0.1rem #0984e3;
+}
+
+input {
+  background-color: #e7f0f7;
+  color:#0984e3;
+  border-color: #0984e3;
+  border-radius: 6px;
+}
+
+input::placeholder {
+  color:#639BC6;
+  padding: 0.8rem;
+}
+
+#searchAlert {
+  transition: 0.4s, smooth;
+  background-color:#d63031;
+  color: #ffffff;
+  font-size: 0.8rem;
+  display: inline;
+}
+
+.hidden {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
