@@ -1,6 +1,8 @@
 const path = require("path"); // core node module
 const express = require("express"); // npm module
 const app = express();
+const port = process.env.PORT || 3000;
+
 const hbs = require('hbs');
 // const bodyParser = require("body-parser");
 // const ejs = require("ejs");
@@ -65,6 +67,6 @@ app.get("/residents", (req, res) => {
   res.send("RESIDENTS PAGE");
 });
 
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
 });
